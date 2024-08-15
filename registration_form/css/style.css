@@ -1,0 +1,200 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: orange;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* Header */
+/* Header styling */
+header {
+    background-color: #212121;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slider:hover img {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+/* Main content */
+main {
+    padding-top: 20px;
+}
+
+/* Registration form */
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 10%;
+    padding: 10px;
+    background-color: #00fbff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+/* For smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* For larger screens */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+}
+
+/* Image slider */
+#slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+#slider figure {
+    margin: 0;
+    padding: 0;
+    width: 300%;
+    display: flex;
+    animation: 10s slider infinite;
+}
+
+#slider figure img {
+    width: 100%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+/* Registration form card */
+.card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid orange; /* Set border color to orange */
+}
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
